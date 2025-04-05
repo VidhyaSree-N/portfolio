@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Student-Faculty Matching Algorithm - Portfolio Details</title>
+  <meta name="description" content="An optimized student-faculty matching algorithm using a modified Gale-Shapley algorithm.">
+  <meta name="keywords" content="Gale-Shapley, Matching Algorithm, Student-Faculty, Optimization">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo d-flex align-items-center">
+      <h1 class="sitename">DevFolio</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active">Home<br></a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+  </div>
+</header>
+
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title" data-aos="fade">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+      <h1 class="mb-2 mb-lg-0">Student-Faculty Matching Algorithm</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li class="current">Portfolio Details</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section">
+
+    <div class="container" data-aos="fade-up">
+
+      <div class="portfolio-details-slider swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "navigation": {
+              "nextEl": ".swiper-button-next",
+              "prevEl": ".swiper-button-prev"
+            },
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            }
+          }
+        </script>
+        <div class="swiper-wrapper align-items-center">
+
+          <div class="swiper-slide">
+            <img src="assets/img/portfolio/app-1.jpg" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/img/portfolio/product-1.jpg" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/img/portfolio/branding-1.jpg" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/img/portfolio/books-1.jpg" alt="">
+          </div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="row justify-content-between gy-4 mt-4">
+
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="portfolio-description">
+            <h2>Student-Faculty Matching Algorithm</h2>
+            <p>
+              This project focuses on automating the matching process between students and faculty members using a modified Gale-Shapley algorithm. The algorithm accounts for faculty capacities, handles ties in preference scores, and is optimized for scalability and accuracy.
+            </p>
+            <p>
+              The algorithm requires an Excel file with three sheets: Faculty Capacities, Faculty Preferences, and Student Preferences. It processes the data client-side for security and efficiency, producing accurate matches in seconds.
+            </p>
+            <p>
+              This project has been deployed successfully and has significantly reduced the manual workload of student-faculty pairing. The tool is live on GitHub Pages and available for demonstration.
+            </p>
+            <p>
+              <strong>Next Steps:</strong> Future enhancements include adding campus-specific matching and backup features to ensure robustness in diverse scenarios.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-info">
+            <h3>Project Information</h3>
+            <ul>
+              <li><strong>Category</strong> Algorithm Optimization</li>
+              <li><strong>Technology</strong> JavaScript, GitHub Pages</li>
+              <li><strong>Status</strong> Deployed</li>
+              <li><strong>Source Code</strong> <a href="https://github.com/VidhyaSree-N/Matching_Algorithm" target="_blank">GitHub Repository</a></li>
+              <li><a href="https://vidhyasree-n.github.io/Matching_Algorithm/GS.html" class="btn-visit align-self-start">Try Algorithm</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- End Portfolio Details Section -->
+
+</main>
+
+<footer id="footer" class="footer accent-background">
+
+  <div class="container">
+    <div class="copyright text-center">
+      <p>© 2024 <strong>Vidhya Sree Narayanappa</strong>. All Rights Reserved.</p>
+    </div>
+    <div class="social-links d-flex justify-content-center">
+      <a href="https://github.com/VidhyaSree-N"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+
+</footer>
+
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/typed.js/typed.umd.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Mammogram Classifier - Portfolio Details</title>
+    <meta name="description" content="Two deep learning classifiers built in Python for mammogram analysis: one to detect cancer and another to distinguish real from synthetic images.">
+    <meta name="keywords" content="Mammogram Classifier, Cancer Detection, Synthetic Image Detection, Deep Learning, Python, TensorFlow">
+
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+            <h1 class="sitename">DevFolio</h1>
+        </a>
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="#hero" class="active">Home<br></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <div class="page-title" data-aos="fade">
+        <div class="container d-lg-flex justify-content-between align-items-center">
+            <h1 class="mb-2 mb-lg-0">Mammogram Classifier</h1>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current">Portfolio Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up">
+            <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                    {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": { "delay": 5000 },
+                        "slidesPerView": "auto",
+                        "navigation": {
+                            "nextEl": ".swiper-button-next",
+                            "prevEl": ".swiper-button-prev"
+                        },
+                        "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                        }
+                    }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                        <img src="assets/img/portfolio/branding-1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/portfolio/app-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="row justify-content-between gy-4 mt-4">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="portfolio-description">
+                        <h2>Mammogram Image Classifier</h2>
+                        <p>This project comprises two convolutional neural network classifiers developed using TensorFlow and Keras:</p>
+                        <ul>
+                            <li>One classifier detects cancerous vs. non-cancerous mammograms.</li>
+                            <li>The second classifier distinguishes real mammograms from synthetically generated ones.</li>
+                        </ul>
+                        <p>These models were trained using a custom data pipeline that included grayscale preprocessing, image resizing, and augmentation from both image (.png) and synthetic data (.npz) sources.</p>
+                        <p>The classifiers utilize multiple convolutional layers with dropout for regularization and are optimized using Adadelta and binary crossentropy for performance. Early stopping is employed to avoid overfitting.</p>
+                        <p>Evaluation results indicate robust accuracy and effective separation of classes, with real-time inference and visual prediction visualization integrated into the workflow.</p>
+                        <p><strong>Next Steps:</strong> Potential future improvements include transfer learning with pre-trained medical imaging models and integration with PACS for clinical testing.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-info">
+                        <h3>Project Information</h3>
+                        <ul>
+                            <li><strong>Category</strong> Deep Learning</li>
+                            <li><strong>Technology</strong> Python, TensorFlow, Keras, OpenCV</li>
+                            <li><strong>Status</strong> Completed</li>
+                            <li><strong>Source Code</strong> <a href="https://github.com/VidhyaSree-N/classifier_synthetic_original_mammograms" target="_blank">GitHub Repository</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer" class="footer accent-background">
+    <div class="container">
+        <div class="copyright text-center">
+            <p>© 2024 <strong>Vidhya Sree Narayanappa</strong>. All Rights Reserved.</p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+            <a href="https://github.com/VidhyaSree-N"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/typed.js/typed.umd.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
